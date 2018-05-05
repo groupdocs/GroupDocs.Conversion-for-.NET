@@ -18,11 +18,11 @@ namespace GroupDocs.Conversion.Examples.CSharp
             Common.cachePath = Path.Combine(Environment.CurrentDirectory, @"../../../../Data/Cache");
             Common.outputPath = Path.Combine(Environment.CurrentDirectory, @"../../../../Data/ConvertedFiles");
 
-            //Common.inputGUIDFile = "PPTSample.pptx";
+            Common.inputGUIDFile = "PDFsample.pdf";
             //Common.inputGUIDFile = "PDFsample.pdf";
 
             // Uncomment following lines and specify the licence file to embed product licence using file path.
-            //Common.licensePath = Path.Combine(Environment.CurrentDirectory, @"D:/License/GroupDocs.total.lic");
+            Common.licensePath = Path.Combine(Environment.CurrentDirectory, @"D:/GroupDocs.total.lic");
             //Common.ApplyLicense(Common.licensePath);
 
             // Uncomment following lines and specify the licence file to embed product licence using stream.
@@ -129,10 +129,10 @@ namespace GroupDocs.Conversion.Examples.CSharp
             // Rendering.RenderHTMLAdvanceOptions();
 
             // Converts and Render file to an Image format and get output as file path
-            Rendering.RenderImageAsPath(ImageSaveOptions.ImageFileType.Png);
+            //Rendering.RenderImageAsPath(ImageSaveOptions.ImageFileType.Tiff);
 
             // Converts and Render file to an Image format and get output as Stream
-            // Rendering.RenderImageAsStream(ImageSaveOptions.ImageFileType.Png);
+             //Rendering.RenderImageAsStream(ImageSaveOptions.ImageFileType.Tiff);
 
             // In Advanced example Converts and Render Password Protected file to Image format
             // Rendering.RenderImageAdvanceOptions(ImageSaveOptions.ImageFileType.Gif);
@@ -141,7 +141,7 @@ namespace GroupDocs.Conversion.Examples.CSharp
             //Rendering.RenderToImageFromStreamToFile(ImageSaveOptions.ImageFileType.Jpeg);
 
             // Converts and render stream input document to image and outputs the resulting document to a stream
-            //Rendering.RenderToImageFromStreamToStream(ImageSaveOptions.ImageFileType.Jpeg);
+            //Rendering.RenderToImageFromStreamToStream(ImageSaveOptions.ImageFileType.Tiff);
 
             // Converts and Render file to an PSD Image format and get output as file path
             //Rendering.RenderPSDImageAsPath();
@@ -156,7 +156,7 @@ namespace GroupDocs.Conversion.Examples.CSharp
             //Conversion.ConvertWithCustomCacheDataHandler();
 
             // Convert file and add watermark into output file
-            //Conversion.ConvertAndAddWaterMarkAsPath();
+             //Conversion.ConvertAndAddWaterMarkAsPath();
 
             // Convert file using Conversion Listners Interfaces
             //Conversion.ConvertUsingConversionLitenerAnddInterfaces();
